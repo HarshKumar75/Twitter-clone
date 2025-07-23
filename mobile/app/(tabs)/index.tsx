@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { usePosts } from '@/hooks/usePost';
 import PostComposer from '@/components/PostComposer';
+import PostsList from '@/components/PostList';
 
 const HomeScreen = () => {
   const [isRefetching, setIsRefetching] = useState(false);
@@ -39,6 +40,7 @@ const HomeScreen = () => {
         }
       >
         <PostComposer />
+        <PostsList />
         </ScrollView>
       </SafeAreaView>
     );
